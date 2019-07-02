@@ -59,3 +59,15 @@ typings/
 
 # next.js build output
 .next
+
+# IntelliJ IDEA
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/httpRequests
+
+.vscode
+
+.DS_Store
+
+bin/.idea
