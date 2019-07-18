@@ -8,6 +8,16 @@ app.get('/', (req, res) => {
     res.json('streamr-mock-rest-api-js')
 })
 
+app.get('/api/v1/users/me', (req, res) => {
+    res.json({
+        name: 'tester1@streamr.com',
+        username: 'tester1@streamr.com',
+        imageUrlSmall: null,
+        imageUrlLarge: null,
+        lastLogin: '2019-07-18T11:56:02Z'
+    })
+})
+
 app.get('/api/v1/streams/:streamId', (req, res) => {
     res.json({
         id: req.params.streamId,
